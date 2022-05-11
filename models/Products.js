@@ -5,7 +5,13 @@ const Products = (sequelize, DataTypes) => {
       price: DataTypes.INTEGER,
       description: DataTypes.STRING,
       img: DataTypes.TEXT,
-    });
+    },
+    {
+      timestamps: false, // remove a obrigatoriedade de utilizar os campos `createdAt` e `updatedAt`
+      tableName: 'Products',
+      underscored: true,
+    }
+    );
   
     Products.associate = (models) => {
       Products.belongsTo(models.Groups,
