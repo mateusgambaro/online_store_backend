@@ -16,7 +16,7 @@ module.exports = {
         type: Sequelize.INTEGER,
         allowNull: false,
       },
-      img: {
+      autor: {
         type: Sequelize.TEXT('long')
       },
       description: {

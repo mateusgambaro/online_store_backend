@@ -4,7 +4,7 @@ const Products = (sequelize, DataTypes) => {
       name: DataTypes.STRING,
       price: DataTypes.INTEGER,
       description: DataTypes.STRING,
-      img: DataTypes.TEXT,
+      autor: DataTypes.TEXT,
     },
     {
       timestamps: false, // remove a obrigatoriedade de utilizar os campos `createdAt` e `updatedAt`

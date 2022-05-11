@@ -3,16 +3,16 @@ module.exports = {
     return queryInterface.bulkInsert('Groups',
       [
         {
-          name: 'Comida',
+          name: 'Filosofia',
         },
         {
-          name: 'Computadores',
+          name: 'Ficção Científica',
         },
         {
-          name: 'Instrumentos musicais',
+          name: 'Música',
         },
         {
-          name: 'Livros',
+          name: 'Biografia',
         },
       ],
       {},
