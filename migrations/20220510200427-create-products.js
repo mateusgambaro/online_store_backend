@@ -25,6 +25,7 @@ module.exports = {
       idGrupo: {
         type: Sequelize.INTEGER,
         allowNull: false,
+        field: 'id_group'
       }
       // createdAt: {
       //   allowNull: false,
