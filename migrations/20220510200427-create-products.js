@@ -22,7 +22,7 @@ module.exports = {
       description: {
         type: Sequelize.STRING
       },
-      idGrupo: {
+      id_grupo: {
         type: Sequelize.INTEGER,
         allowNull: false,
         field: 'id_group'
