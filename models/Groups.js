@@ -12,7 +12,7 @@ const Groups = (sequelize, DataTypes) => {
 
     Groups.associate = (models) => {
         Groups.hasMany(models.Products,
-          { foreignKey: 'idGroup', as: 'grupos' });
+          { foreignKey: 'grupo', as: 'grupos' });
       };
   
     return Groups;

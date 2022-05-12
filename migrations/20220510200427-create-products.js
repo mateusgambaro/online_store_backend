@@ -22,10 +22,9 @@ module.exports = {
       description: {
         type: Sequelize.STRING
       },
-      id_grupo: {
+      grupo: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        field: 'id_group'
       }
       // createdAt: {
       //   allowNull: false,

@@ -15,7 +15,7 @@ const Products = (sequelize, DataTypes) => {
   
     Products.associate = (models) => {
       Products.belongsTo(models.Groups,
-        { foreignKey: 'idGrupo', as: 'produtos' });
+        { foreignKey: 'grupo', as: 'produtos' });
     };
 
     return Products;
