@@ -19,7 +19,7 @@ router.get('/getProducts/:id', async (req, res) => {
     const { id } = req.params;
     const product = await Products.findByPk(id);
 
-    if (!product) return res.status(404).json({ message: 'Usuário não encontrado' });
+    if (!product) return res.status(404).json({ message: 'Produto não encontrado' });
 
     return res.status(200).json(product);
   } catch (e) {
