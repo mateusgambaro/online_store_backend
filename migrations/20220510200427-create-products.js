@@ -17,10 +17,13 @@ module.exports = {
         allowNull: false,
       },
       autor: {
-        type: Sequelize.TEXT('long')
+        type: Sequelize.STRING
       },
       description: {
         type: Sequelize.STRING
+      },
+      img: {
+        type: Sequelize.TEXT
       },
       grupo: {
         type: Sequelize.INTEGER,

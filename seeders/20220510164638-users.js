@@ -7,6 +7,7 @@ module.exports = {
         email: 'mateusgambaro@gmail.com',
         password: '13122100',
         admin: false,
+        saldo: 200,
         createdAt: Sequelize.literal('CURRENT_TIMESTAMP'),
         updatedAt: Sequelize.literal('CURRENT_TIMESTAMP'),
       },

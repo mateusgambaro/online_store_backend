@@ -17,6 +17,9 @@ module.exports = {
       admin: {
         type: Sequelize.BOOLEAN
       },
+      saldo: {
+        type: Sequelize.INTEGER
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
