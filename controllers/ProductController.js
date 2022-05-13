@@ -45,8 +45,8 @@ router.get('/getProducts/:id', async (req, res) => {
 
 router.post('/insertProducts', async (req, res) => {
   try {
-    const { name, price, autor, description, idGrupo } = req.body;
-    const newproduct = await Products.create({ name, price, autor, description, idGrupo });
+    const { name, price, autor, description, grupo } = req.body;
+    const newproduct = await Products.create({ name, price, autor, description, grupo });
 
     return res.status(201).json(newproduct);
   } catch (e) {
@@ -57,11 +57,11 @@ router.post('/insertProducts', async (req, res) => {
 
 router.put('/updateProducts/:id', async (req, res) => {
   try {
-    const { name, price, autor, description, idGrupo } = req.body;
+    const { name, price, autor, description, grupo } = req.body;
     const { id } = req.params;
 
     const [updateproduct] = await Products.update(
-      { name, price, autor, description, idGrupo } ,
+      { name, price, autor, description, grupo } ,
       { where: { id } },
     );
 
