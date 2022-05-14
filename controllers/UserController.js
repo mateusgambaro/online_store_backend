@@ -55,26 +55,24 @@ router.get('/getUser', async (_req, res) => {
 //   }
 // });
 
-// router.put('/:id', async (req, res) => {
-//   try {
-//     const { fullName, email } = req.body;
-//     const { id } = req.params;
+router.put('/updateUser/:id', async (req, res) => {
+  try {
+    const { saldo } = req.body;
+    const { id } = req.params;
 
-//     const [updateUser] = await User.update(
-//       { fullName, email },
-//       { where: { id } },
-//     );
+    const [updateUser] = await User.update(
+      { saldo },
+      { where: { id } },
+    );
 
-//     console.log(updateUser);
+    if(!updateUser) return res.status(404).json({ message: 'Usuário não encontrado' });
 
-//     if(!updateUser) return res.status(404).json({ message: 'Usuário não encontrado' });
-
-//     return res.status(200).json({ message: 'Usuário atualizado com sucesso!' });
-//   } catch (e) {
-//     console.log(e.message);
-//     res.status(500).json({ message: 'Algo deu errado' });
-//   }
-// });
+    return res.status(200).json({ message: 'Usuário atualizado com sucesso!' });
+  } catch (e) {
+    console.log(e.message);
+    res.status(500).json({ message: 'Algo deu errado' });
+  }
+});
 
 // // Este endpoint usa o método destroy do Sequelize para remover um usuário no banco.
 // router.delete('/:id', async (req, res) => {

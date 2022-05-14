@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 app.use('/', userController, productController, groupController );
-app.use('/:id', productController, groupController );
+app.use('/:id', userController, productController, groupController );
 
 
 
