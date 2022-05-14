@@ -14,11 +14,11 @@ module.exports = {
       password: {
         type: Sequelize.STRING
       },
-      admin: {
-        type: Sequelize.BOOLEAN
-      },
       saldo: {
         type: Sequelize.INTEGER
+      },
+      admin: {
+        type: Sequelize.BOOLEAN
       },
       createdAt: {
         allowNull: false,

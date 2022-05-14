@@ -5,13 +5,7 @@ const router = express.Router();
 
 router.get('/getUser', async (_req, res) => {
   try {
-    const users = await User.findAll({
-      where: {
-        saldo: {
-          [Sequelize.Op.not]: null
-        }
-      }
-    });
+    const users = await User.findAll();
 
     return res.status(200).json(users);
   } catch (e) {
@@ -19,6 +13,12 @@ router.get('/getUser', async (_req, res) => {
     res.status(500).json({ message: 'Algo deu errado' });
   };
 });
+
+router.get('/userLogin', async (req, res) => {
+  const { email, admin } = req.user;
+
+  res.status(200).json({ email, admin });
+})
 
 
 // router.get('/:id', async (req, res) => {
