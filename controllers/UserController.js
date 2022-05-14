@@ -1,10 +1,17 @@
 const express = require('express');
 const { User } = require('../models');
+const Sequelize = require('sequelize');
 const router = express.Router();
 
 router.get('/getUser', async (_req, res) => {
   try {
-    const users = await User.findAll();
+    const users = await User.findAll({
+      where: {
+        saldo: {
+          [Sequelize.Op.not]: null
+        }
+      }
+    });
 
     return res.status(200).json(users);
   } catch (e) {
