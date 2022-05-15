@@ -44,6 +44,7 @@ As rotas de delete e update foram criadas para todas as rotas, porém no código
 ## 🛠️ BackEnd construído com
 
 * [Sequelize](https://sequelize.org/) 
+* [Supabase](https://supabase.com/) 
 * [MySQL](https://www.mysql.com/) 
 * [Express](https://expressjs.com/)
 * [NodeJs](https://nodejs.org/en/) 
