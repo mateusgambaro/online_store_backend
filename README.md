@@ -51,4 +51,3 @@ As rotas de delete e update foram criadas para todas as rotas, porém no código
 * [Docker](https://www.docker.com/) 
 * [Heroku](https://dashboard.heroku.com/)
 * [Joi](https://www.npmjs.com/package/joi)
-* 
