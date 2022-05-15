@@ -6,7 +6,9 @@ https://online-store-backend-voll.herokuapp.com/
 
 ## ROTAS
 
-GET
+GET.
+
+
 /getUser - Retorna todos os usuários.
 
 
@@ -17,12 +19,19 @@ GET
 
 
 
-PUT
-/updateUser - Altera o saldo do usuário
+PUT.
 
-POST
-/login - Gera token de autenticação para admin user e normal user
-/insertProduct - Cria um novo livro
+
+/updateUser - Altera o saldo do usuário.
+
+
+POST.
+
+
+/login - Gera token de autenticação para admin user e normal user.
+
+
+/insertProduct - Cria um novo livro.
 
 
 Desenvolvimento de uma aplicação de cadastro e venda de livros, e controle de moedas dos usuários da plataforma.
