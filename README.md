@@ -43,10 +43,12 @@ As rotas de delete e update foram criadas para todas as rotas, porém no código
 
 ## 🛠️ BackEnd construído com
 
-* [React Hook Form](https://react-hook-form.com/) 
-* [React Router Dom](https://v5.reactrouter.com/) 
-* [Material UI](https://mui.com/pt/) 
-* [Axios](https://axios-http.com/docs/intro)
-* [React Rainbow](https://react-rainbow.io/) 
-* [FontAwesome](https://fontawesome.com/)
-* [Netlify](https://www.netlify.com/)
+* [Sequelize](https://sequelize.org/) 
+* [MySQL](https://www.mysql.com/) 
+* [Express](https://expressjs.com/)
+* [NodeJs](https://nodejs.org/en/) 
+* [JWT](https://www.npmjs.com/package/jsonwebtoken)
+* [Docker](https://www.docker.com/) 
+* [Heroku](https://dashboard.heroku.com/)
+* [Joi](https://www.npmjs.com/package/joi)
+* 
