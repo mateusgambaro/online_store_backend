@@ -7,9 +7,15 @@ https://online-store-backend-voll.herokuapp.com/
 ## ROTAS
 
 GET
-/getUser - Retorna todos os usuários
-/getProducts - Retorna todos os livros
-/getGroups - Retorna todas as categorias de livros
+/getUser - Retorna todos os usuários.
+
+
+/getProducts - Retorna todos os livros.
+
+
+/getGroups - Retorna todas as categorias de livros.
+
+
 
 PUT
 /updateUser - Altera o saldo do usuário
