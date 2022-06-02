@@ -5,10 +5,7 @@ Desenvolvimento de uma aplicação de cadastro e venda de livros, e controle de 
 
 Os livros estão separados por categorias que mais me interessam e que fazem diferança no meu dia :)
 
-## :globe_with_meridians: HEROKU URL - API
-https://online-store-backend-voll.herokuapp.com/
-
-## ROTAS
+## :globe_with_meridians: HEROKU URL - API | ROTAS
 
 GET.
 
